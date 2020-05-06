@@ -1,1 +1,1 @@
-A working Weather App using the Darksky API as well as Skycons for images. Must enable location for App to work.
+A working Weather App that provides the current temperature and current conditions for your area using the Darksky API as well as Skycons for images. App will also give you temperature in Celcius if you click on the "F" symbol under the displayed temperature. Must enable location for App to work.
