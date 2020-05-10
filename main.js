@@ -6,15 +6,13 @@ window.addEventListener("load", () => {
     let location = document.querySelector(".location");
     const tempSection = document.querySelector(".temp-section");
     const tempSpan = document.querySelector(".temp-section span");
-
     if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(position => {
             long = position.coords.longitude;
             lat = position.coords.latitude;
             console.log(position);
-            const proxy = `https://cors-anywhere.herokuapp.com/`;
-      
-            const api = `${ proxy } //insertAPI Here// ${ lat },${ long }`;
+            const proxy = `https://cors-anywhere.herokuapp.com/`;      
+            const api = `${ proxy } //Insert API KEY Here// ${ lat },${ long }`;
             fetch(api)
             .then(data => {
                 return data.json()
